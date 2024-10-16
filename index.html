@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Praktikum 3 Programan Web</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      table {
+        width: 50%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        padding: 10px;
+        text-align: left;
+      }
+      th {
+        background-color: #f2f2f2;
+      }
+      form {
+        margin-top: 20px;
+      }
+      label {
+        display: inline-block;
+        width: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Contoh Daftar, Tabel, dan Formulir di HTML</h1>
+
+    <!-- Daftar Tidak Berurutan -->
+    <h2>Daftar Tidak Berurutan</h2>
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ul>
+
+    <!-- Daftar Berurutan -->
+    <h2>Daftar Berurutan</h2>
+    <ol>
+      <li>Item Pertama</li>
+      <li>Item Kedua</li>
+      <li>Item Ketiga</li>
+    </ol>
+
+    <!-- Daftar Definisi -->
+    <h2>Daftar Definisi</h2>
+    <dl>
+      <dt>HTML</dt>
+      <dd>
+        Hypertext Markup Language adalah bahasa standar untuk membuat halaman
+        web.
+      </dd>
+      <dt>CSS</dt>
+      <dd>
+        Cascading Style Sheets digunakan untuk mendesain tampilan halaman web.
+      </dd>
+    </dl>
+
+    <!-- Tabel -->
+    <h2>Tabel Data Sederhana</h2>
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Formulir -->
+    <h2>Formulir Pendaftaran</h2>
+    <form action="/submit" method="POST">
+      <label for="name">Nama:</label>
+      <input type="text" id="name" name="name" required /><br /><br />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required /><br /><br />
+
+      <label for="message">Pesan:</label><br />
+      <textarea id="message" name="message" rows="4" cols="50"></textarea
+      ><br /><br />
+
+      <label for="gender">Jenis Kelamin:</label>
+      <select id="gender" name="gender">
+        <option value="male">Laki-laki</option>
+        <option value="female">Perempuan</option>
+        <option value="other">Lainnya</option></select
+      ><br /><br />
+
+      <input type="submit" value="Kirim" />
+    </form>
+  </body>
+</html>
